@@ -1,12 +1,20 @@
+"""
+Given an integer num, convert it into a 32-bit binary
+number using a list representation
+"""
 
-def decimalToBinary(num):
-    binry = []
+
+def decimal_to_binary(num):
+    binary = []
     while num >= 1:
         r = (num % 2)
-        binry.append(r)
+        binary.append(r)
         num = (num // 2)
-    binry.reverse()
-    p = 32 - len(binry)
+    binary.reverse()
+    p = 32 - len(binary)
     zeros = p * [0]
-    zeros.extend(binry)
+    zeros.extend(binary)
     return zeros
+
+if __name__ == "__main__":
+    print(decimal_to_binary(101))
