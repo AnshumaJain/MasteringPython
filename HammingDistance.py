@@ -1,35 +1,19 @@
+from decimal_to_binary import *
 
-def decimalToBinary(num):
-    binry = []
 
-    while num >= 1:
-        r = (num % 2)
-        binry.append(r)
-        num = (num // 2)
-    binry.reverse()
-    p = 32 - len(binry)
-    zeros = p * [0]
-    zeros.extend(binry)
-    return zeros
-# print (decimalToBinary(10))
+def hamming_distance(x, y):
 
-def calculateHammingDistance(x, y):
-
-    x = decimalToBinary(x)
-    print (x)
-    y = decimalToBinary(y)
-    print (y)
+    x = decimal_to_binary(x)
+    y = decimal_to_binary(y)
+    # print(x, "\n", y)
 
     hamming_dist = 0
     for i in range(0, len(x)):
-        if x[i] == y[i]:
-            pass
-        else:
+        if x[i] != y[i]:
             hamming_dist += 1
 
     return hamming_dist
 
 
-print (calculateHammingDistance(0, 4294967295))
-
+print(hamming_distance(0, 4294967295))
 # 0 ≤ x, y < 231
