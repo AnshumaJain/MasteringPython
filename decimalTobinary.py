@@ -11,9 +11,11 @@ def decimal_to_binary(num):
         binary.append(r)
         num = (num // 2)
     binary.reverse()
+
     p = 32 - len(binary)
-    zeros = p * [0]
-    zeros.extend(binary)
+    zeros = p * [0]  # create a list of zeros with length p
+    zeros.extend(binary)  # append binary list to zeros list
+
     return zeros
 
 if __name__ == "__main__":
