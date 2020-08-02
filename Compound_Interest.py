@@ -10,7 +10,7 @@ if __name__ == "__main__":
     R = float(input("Enter the Rate of Interest: "))
     t = float(input("Enter the Time of deposit: "))
 
-    print("Compound Interest: ", CI(P,R,t))
+    print("Compound Interest: ", CI(P, R, t))
 
 
 
