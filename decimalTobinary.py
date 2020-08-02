@@ -18,5 +18,6 @@ def decimal_to_binary(num):
 
     return zeros
 
+
 if __name__ == "__main__":
     print(decimal_to_binary(101))
