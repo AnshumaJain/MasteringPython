@@ -46,4 +46,5 @@ def divide(dividend: int, divisor: int) -> int:
         return count
 
 
-print(divide(-100.7, 2))
+if __name__ == "__main__":
+    print(divide(-100.7, 2))
