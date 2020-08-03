@@ -16,10 +16,11 @@ def three_sum(nums):
                     my_dict[c] = index
                 else:
                     list = [a, b, c]
-                    #print("list = ", list)
                     my_set.append(list)
 
-    print("dict = ", my_dict)
+    #print("dict:", my_dict)
     return my_set
 
-print(three_sum([-1, 0, 1, 2, -1, -4]))
+
+if __name__ == "__main__":
+    print(three_sum([-1, 0, 1, 2, -1, -4]))
