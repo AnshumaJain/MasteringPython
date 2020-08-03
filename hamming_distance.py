@@ -15,5 +15,6 @@ def hamming_distance(x, y):
     return hamming_dist
 
 
-print(hamming_distance(0, 4294967295))
-# 0 ≤ x, y < 231
+if __name__ == "__main__":
+    # 0 ≤ x, y < 231
+    print(hamming_distance(0, 4294967295))
