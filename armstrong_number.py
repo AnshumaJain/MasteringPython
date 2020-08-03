@@ -9,9 +9,11 @@ Explanation:
 153 is a 3-digit number, and 153 = 1^3 + 5^3 + 3^3.
 """""
 
+
 class Solution:
-    def isArmstrong(self, N: int) -> bool:
-        num = str(N)
+    @staticmethod
+    def is_armstrong(n: int) -> bool:
+        num = str(n)
         ln = len(num)
 
         arm_num = 0
@@ -19,4 +21,9 @@ class Solution:
             # raise and add each digit to the power of length
             arm_num += int(i) ** ln
 
-        return arm_num == N
+        return arm_num == n
+
+
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.is_armstrong(153))
