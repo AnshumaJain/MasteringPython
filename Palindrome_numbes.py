@@ -1,4 +1,6 @@
-def isPalindrome(x: int) -> bool:
+# Find out if the given integer is a palindrome
+
+def is_palindrome(x: int) -> bool:
 
     if x < 0:
         return False
@@ -17,4 +19,8 @@ def isPalindrome(x: int) -> bool:
     else:
         return False
 
-print(isPalindrome())
+
+if __name__ == "__main__":
+
+    input = eval(input("Enter the string = "))
+    print(is_palindrome(input))
