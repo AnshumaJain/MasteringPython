@@ -1,14 +1,20 @@
+# Swap the first and last elements of the given input list
 
-input_list = input("Enter the list to be swapped =")
-i = 0
-n = len(input_list)
+def swap_first_and_last(input_list):
+    i = 0
+    n = len(input_list)
 
-temp = input_list[i]
-input_list[i] = input_list[n-1]
-input_list[n-1] = temp
+    temp = input_list[i]
+    input_list[i] = input_list[n-1]
+    input_list[n-1] = temp
 
-print input_list
 
+if __name__ == "__main__":
+
+    # [3,2,4,1,3,6,8]
+    input_list = eval(input("Enter the list to be swapped ="))
+    swap_first_and_last(input_list)
+    print(input_list)
 
 # learn from this:---->
 # def swapList(newList):
