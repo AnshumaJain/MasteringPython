@@ -1,3 +1,4 @@
+# Calculate the hamming distance between two integers
 from decimal_to_binary import *
 
 
