@@ -1,15 +1,20 @@
+# Find the maximum value given a list
 
-input_list = input("Enter the list=")
+def find_max_in_list(input_list):
 
-size = len(input_list)
-i = 0
-max = 0
+    max_val = input_list[0]
+    size = len(input_list)
 
-for i in range(0, size):
-    if input_list[i] > max:
-        max = input_list[i]
+    for i in range(0, size):
+        if input_list[i] > max_val:
+            max_val = input_list[i]
 
-print max
+    return max_val
 
 
- # [1,2,3], [7, 5, 6, 1]
+if __name__ == "__main__":
+
+    # [1,2,3], [7, 5, 6, 1]
+    input_list = eval(input("Enter the list="))
+
+    print(find_max_in_list(input_list))
