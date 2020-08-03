@@ -14,10 +14,10 @@ def list_largest_nums(input_list, N):
         ln = len(input_list)
         max_val = 0
         for i in range(0, ln):
-            if int(input_list[i]) > int(max_val):
+            if input_list[i] > max_val:
                 max_val = input_list[i]
 
-        Nmax_list.append(int(max_val))
+        Nmax_list.append(max_val)
         if max_val in input_list:
             input_list.remove(max_val)
 
@@ -34,8 +34,7 @@ if __name__ == "__main__":
     # [1,2,1,2]
     # [10,10,1,1]
 
-    input_list = input("Enter the list=")
-    input_list = input_list.split(",")
+    input_list = eval(input("Enter the list="))
     N = int(input("Enter the no. of Max values you want="))
 
     print(list_largest_nums(input_list, N))
