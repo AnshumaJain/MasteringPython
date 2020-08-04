@@ -19,3 +19,4 @@ if __name__ == "__main__":
     # 0 ≤ x, y < 231
     print("A")
     print(hamming_distance(0, 4294967295))
+    print("B")
