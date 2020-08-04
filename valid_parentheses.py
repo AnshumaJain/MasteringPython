@@ -64,9 +64,10 @@ def is_valid(s: str) -> bool:
             return False
 
 
-print(is_valid("()"))
-print(is_valid("()[]{}"))
-print(is_valid("(]"))
-print(is_valid("([)]"))
-print(is_valid("{[]}"))
+if __name__ == "__main__":
+    print(is_valid("()"))
+    print(is_valid("()[]{}"))
+    print(is_valid("(]"))
+    print(is_valid("([)]"))
+    print(is_valid("{[]}"))
 
