@@ -57,4 +57,5 @@ def sorted_squares(A):
     return merge
 
 
-print(sorted_squares([-4, -1, 0, 3, 10]))
+if __name__ == "__main__":
+    print(sorted_squares([-4, -1, 0, 3, 10]))
