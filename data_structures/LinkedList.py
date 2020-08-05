@@ -45,13 +45,14 @@ class LinkedList:
         return False
 
 
-p = LinkedList()
-p.add(3)
-p.add(6)
-p.add(7)
-p.add(2)
-p.print()
-print(p.remove(8))
-print(p.find(6))
-print(p.remove(7))
-p.print()
+if __name__ == "__main__":
+    p = LinkedList()
+    p.add(3)
+    p.add(6)
+    p.add(7)
+    p.add(2)
+    p.print()
+    print(p.remove(8))
+    print(p.find(6))
+    print(p.remove(7))
+    p.print()
