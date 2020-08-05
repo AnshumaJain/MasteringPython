@@ -55,22 +55,23 @@ Emails have length at least 8.
 Phone numbers have length at least 10.
 """
 
-def maskPII( S: str) -> str:
-    if "@" in S:  # Email
-        new = S.split("@")
+
+def mask_personal_info(my_str: str) -> str:
+    if "@" in my_str:  # Email
+        new = my_str.split("@")
         name1 = new[0]
         mask = "*****"
-        return (name1[0].lower() + mask + name1[len(name1)-1].lower() + "@" + new[1])
+        return (name1[0].lower() + mask + name1[len(name1) - 1].lower() + "@" + new[1])
 
     else:  # Phone number
-        new = S
+        new = my_str
         remove = ['-', '(', ')', '+', ' ']
         for i in remove:
             new = new.replace(i, "")
         last4 = new[-4:]
 
         if len(new) == 10:
-            return ("***-***-"+ last4)
+            return ("***-***-" + last4)
         elif len(new) == 11:
             return ("+*-***-***-" + last4)
         elif len(new) == 12:
@@ -79,4 +80,5 @@ def maskPII( S: str) -> str:
             return ("+***-***-***-" + last4)
 
 
-print(maskPII("86-(10)12345678"))
+if __name__ == "__main__":
+    print(mask_personal_info("86-(10)12345678"))
