@@ -108,5 +108,5 @@ class Solution:
 if __name__ == "__main__":
 
         sol = Solution()
-        print(sol.max_points([[1,1],[2,2],[3,3]]))
+        print(sol.max_points([[1, 1],[2, 2],[3, 3]]))
         print(sol.max_points([[1, 1], [3, 2], [5, 3], [4, 1], [2, 3], [1, 4]]))
