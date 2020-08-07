@@ -41,13 +41,15 @@ searchWord consists of lowercase English letters.
 
 
 class Solution:
-    def is_prefix_of_word(self, sentence: str, searchWord: str) -> int:
+
+    @staticmethod
+    def is_prefix_of_word(sentence: str, search_word: str) -> int:
 
         count = 0
         for i in sentence.split():
             count += 1
-            if searchWord in i:
-                if searchWord[0] == i[0]:
+            if search_word in i:
+                if search_word[0] == i[0]:
                     return count
 
         return -1
