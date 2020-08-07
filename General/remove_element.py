@@ -27,12 +27,10 @@ class Solution:
     @staticmethod
     def remove_element(nums: List[int], val: int) -> int:
 
-        if nums == []:
+        if not nums:
             return len(nums)
 
-        count = 1
         i = 0
-
         while 1:
             element = nums[i]
             if element == val:
