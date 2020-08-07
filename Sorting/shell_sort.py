@@ -1,5 +1,5 @@
 """""
-Given an array of integers nums, sort the array in ascending order using shell sort.
+Given an array of integers nums, sort the array in ascending order using Shell sort.
 
 Example 1:
 Input: nums = [5,2,3,1]
