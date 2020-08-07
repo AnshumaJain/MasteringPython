@@ -1,4 +1,6 @@
 """""
+LeetCode Problem #1134: Armstrong Number
+
 The k-digit number N is an Armstrong number if and only if the k-th power of each digit sums to N.
 Given a positive integer N, return true if and only if it is an Armstrong number.
 
