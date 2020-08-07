@@ -1,5 +1,6 @@
 """
 LeetCode Problem #831: Masking Personal Information
+
 We are given a personal information string S, which may represent either an email address
 or a phone number. We would like to mask this personal information according to the following rules:
 
