@@ -1,4 +1,4 @@
-# Implement a Linked List in python with add(), find(), remove() functionalities
+# Implement a Linked List in python with print(), add(), find(), remove() functionalities
 
 class Node:
     def __init__(self, data, next_node_add):
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     p.add(7)
     p.add(2)
     p.print()
-    print(p.remove(8))
+    p.remove(8)
     print(p.find(6))
-    print(p.remove(7))
+    p.remove(7)
     p.print()

@@ -1,5 +1,6 @@
 """
 LeetCode Problem#38: Count And Say
+
 The count-and-say sequence is the sequence of integers with the first five terms as following:
 1.     1
 2.     11
@@ -49,3 +50,4 @@ def count_and_say(n):
 if __name__ == "__main__":
 
     print(count_and_say(5))
+    print(count_and_say(10))
